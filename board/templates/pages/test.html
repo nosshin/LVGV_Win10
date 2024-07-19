@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Test{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+  <p>Webcam-Based Model Testing</p>
+  <div>
+    <img src="{{ url_for('video.video_video_feed') }}" width="640" height="480">
+  </div>
+{% endblock content %}
